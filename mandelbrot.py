@@ -54,7 +54,7 @@ def main():
                 c = complex(x, y)
                 output = complex(0, 0)
                 i = 0
-                while abs(output) <= 2*2 and i < max_iter:
+                while abs(output) <= 2 and i < max_iter:
                     output = output ** 2 + c
                     i += 1
 
