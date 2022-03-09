@@ -1,8 +1,5 @@
-import math
 import pygame
 import json
-import functools
-import colorsys
 
 pygame.init()
 
@@ -16,10 +13,6 @@ mandelbrot_y_bounds = [-2.5, 2.5]
 width = 400
 height = 400
 screen = pygame.display.set_mode((width, height))
-
-@functools.cache
-def hsv_to_rgb(h, s, v):
-    return colorsys.hsv_to_rgb(h, s, v)
 
 def convert_reg_to_mandel(x, y):
     return (
